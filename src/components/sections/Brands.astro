@@ -1,10 +1,91 @@
 ---
 import Container from "../shared/Container.astro";
 import Title from "../shared/Title.astro";
+import Paragraph from "../shared/Paragraph.astro";
 
 ---
 
-<section>
-    <Container className="space-y-8">
+<section id="brands">
+    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
+            <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
+                <div class="w-full h-80 sm:h-96 midmd:h-full relative">
+                    <div class="absolute rotate-45 -left-5 md:-left-10 lg:-left-20 xl:-left-24 p-1 top-1/2 w-16 h-16 bg-gradient-to-br from-primary to-orange-400 blur-3xl opacity-50"></div>
+                    <div class="absolute p-1 -top-4 md:-top-10 right-0 w-20 h-20 bg-gradient-to-br from-primary to-orange-400 rounded-full blur-3xl opacity-60"></div>
+
+                    <span class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"></span>
+                    <img src="/images/2986522.png" alt="banner image" 
+                        width="1240" height="1385"
+                        class="w-auto left-1/2 -translate-x-1/2 absolute top-0 max-h-full" />
+                </div>
+            </div>
+            <div class="flex-1 flex justify-end midmd:w-7/12 lg:w-1/2 flex-col">
+                <Title>
+                    ¡Sé nuestro usuario piloto y ayúdanos a mejorar la aplicación!
+                </Title>
+                <Paragraph className="mt-8">
+                    Puedes recibir recompensas por participar.
+                    <br>
+                    <br> 
+                <Title>
+                    ¿A qué esperas?
+                </Title>
+
+                </Paragraph>
+                <Paragraph className="mt-2">
+                    Te dejamos todo lo que necesitas saber para entender cómo funciona la aplicación <a href="" style="color:blue">aquí</a>.
+                </Paragraph>
+                <br>
+                <Title>
+                    ¿Qué debe probar cada tipo de usuario?
+                </Title>
+                <div>
+                    <ul class="mt-8 space-y-4 text-heading-3 font-medium flex-col">
+                        <li>
+                            <h3 class="font-bold"> Usuarios:</h3>
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Registrarse.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Editar tu perfil.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Buscar compañeros.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Publicarse como compañero.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Interactuar en chats grupales.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Buscar pisos.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Probar nuestros planes para usuarios.
+                        </li>
+                    </ul>
+                    <ul class="mt-8 space-y-4 text-heading-3 font-medium ">
+                        <li>
+                            <h3 class="font-bold"> Propietarios:</h3>
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Registrarse.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Anuncia tus pisos.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Interactuar en chats grupales.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Gestiona y comprueba estadísticas de tus pisos.
+                        </li>
+                        <li>
+                            <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Prueba nuestros planes para propietarios.
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </Container>
 </section>
