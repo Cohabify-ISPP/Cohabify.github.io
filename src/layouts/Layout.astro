@@ -36,11 +36,11 @@ const { title } = Astro.props;
     if (
       localStorage.getItem("appTheme") === "dark" ||
       (!("appTheme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
+        window.matchMedia("(prefers-color-scheme: light)").matches)
     ) {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("light");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("light");
     }
     if (switchTheme) {
       switchTheme.addEventListener("click", (e) => {
@@ -49,19 +49,19 @@ const { title } = Astro.props;
         if (doc) {
           if (localStorage.getItem("appTheme")) {
             if (localStorage.getItem("appTheme") === "light") {
-              doc.classList.add("dark");
-              localStorage.setItem("appTheme", "dark");
+              doc.classList.add("light");
+              localStorage.setItem("appTheme", "light");
             } else {
-              document.documentElement.classList.remove("dark");
+              document.documentElement.classList.remove("light");
               localStorage.setItem("appTheme", "light");
             }
           } else {
-            if (doc.classList.contains("dark")) {
-              doc.classList.remove("dark");
+            if (doc.classList.contains("light")) {
+              doc.classList.remove("light");
               localStorage.setItem("appTheme", "light");
             } else {
-              doc.classList.add("dark");
-              localStorage.setItem("appTheme", "dark");
+              doc.classList.add("light");
+              localStorage.setItem("appTheme", "light");
             }
           }
         }
