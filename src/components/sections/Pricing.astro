@@ -1,0 +1,108 @@
+---
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+---
+      
+<section id="pricing" class="pb-20">
+    <Container>
+        <Paragraph>
+            <!-- Añade tu HTML aquí -->
+            <div class="pricing-container">
+                <div class="card">
+                <div class="card-header">Básico</div>
+                <div class="card-body">
+                    <p>Para nuevos usuarios</p>
+                    <p>Ver publicaciones ilimitadas</p>
+                    <p>3 chats en paralelo</p>
+                    <p>Perfil personalizado</p>
+                    <p>Hacer publicación Gratis</p>
+                    <p>0€</p>
+                    <br></br>
+                    <p>*El plan básico debe pagar 3€ por cada promoción que desee hacer por anuncio</p>
+                </div>
+                <div class="card-footer">
+                    <button>¡Lo quiero!</button>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header">Explorador</div>
+                <div class="card-body">
+                    <p>Para los más exigentes</p>
+                    <p>Ver publicaciones ilimitadas</p>
+                    <p>Chats ilimitados</p>
+                    <p>Perfil verificado</p>
+                    <p>Acceso anticipado</p>
+                    <p>5€</p>
+                    <br></br>
+                    <p>*El plan explorador debe pagar 3€ por cada promoción que desee hacer por anuncio</p>
+                </div>
+                <div class="card-footer">
+                    <button>¡Lo quiero!</button>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header">Propietario</div>
+                <div class="card-body">
+                    <p>Para nuestros propietarios</p>
+                    <p>Publicar viviendas</p>
+                    <p>Chats ilimitados</p>
+                    <p>Promociones de pisos ilimitadas</p>
+                    <p>Estadísticas</p>
+                    <p>15€ + 5€*</p>
+                    <br></br>
+                    <p>*El plan propietario debe pagar 5€ por cada propiedad adicional que desee publicar</p>
+                </div>
+                <div class="card-footer">
+                    <button>¡Lo quiero!</button>
+                </div>
+                </div>
+            </div>
+            
+            <style>
+                .pricing-container {
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 10%;
+                    }
+
+                    .card {
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    width: 30%;
+                    text-align: center;
+                    }
+
+                    .card-header {
+                    background-color: #f8f8f8;
+                    padding: 10px;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    }
+
+                    .card-body {
+                    padding: 10px;
+                    }
+
+                    .card-footer {
+                    background-color: #f8f8f8;
+                    padding: 10px;
+                    }
+
+                    button {
+                    padding: 5px 15px;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    }
+
+                    button:hover {
+                    background-color: #0056b3;
+                    }
+            </style>
+      </Paragraph>
+    </Container>
+</section>
+
+  
