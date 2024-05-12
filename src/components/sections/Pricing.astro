@@ -5,103 +5,219 @@ import Paragraph from "../shared/Paragraph.astro";
       
 <section id="pricing" class="pb-20">
     <Container>
-        <Paragraph>
+        <div style="margin: 10%" >
+            <Paragraph className="mt-8" >
             <!-- Añade tu HTML aquí -->
-            <div class="pricing-container">
-                <div class="card">
-                <div class="card-header">Básico</div>
-                <div class="card-body">
-                    <p>Para nuevos usuarios</p>
-                    <p>Ver publicaciones ilimitadas</p>
-                    <p>3 chats en paralelo</p>
-                    <p>Perfil personalizado</p>
-                    <p>Hacer publicación Gratis</p>
-                    <p>0€</p>
-                    <br></br>
-                    <p>*El plan básico debe pagar 3€ por cada promoción que desee hacer por anuncio</p>
+            <div class="row mb-3">
+            <div v-else class="pricing-container" style="padding:0 12vw ;">
+                        <div class="col">
+                            <div class="card card1">
+                                <h2 class="fw-bold" style="color: #28426B;">Básico</h2>
+                                <p class="fw-bold"><em>Para nuevos usuarios</em></p>
+                                <div class="modal-body">
+                                    
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"></img><span > Ver publicaciones ilimitadas</span>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span > 3 chats en paralelo</span>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span > Perfil personalizado</span>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span > Hacer publicación</span>
+                                
+                                    <div style="text-align: center;">
+                                        <button><a href="https://ppl-cohabify.onrender.com/login" class="block">¡Lo quiero!</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" style="margin-left: 40px; margin-right: 40px;">
+                            <div class="card card2">
+                                <h2 class="fw-bold"  style="color: #28426B;">Explorador</h2>
+                                <p class="fw-bold"><em>Para los más exigentes</em></p>
+                                <div class="modal-body">
+                                    
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span > Ver publicaciones ilimitadas</span>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span class="fw-bold" > Chats ilimitados</span>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span class="fw-bold"> Perfil verificado</span>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span class="fw-bold"> Acceso anticipado*</span>
+                                
+                                    <div style="text-align: center;">
+                                        <button><a href="https://ppl-cohabify.onrender.com/login" class="block">¡Lo quiero!</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="margin-top:1vw"><em>* El plan explorador podrá ver las nuevas publicaciones con 24 horas de antelación. El plan básico sólo podrá ver 
+                                        publicaciones con más de un día de antigüedad
+                            </em></p>
+                        </div>
+                        <div class="col">
+                            <div class="card card3">
+                                <h2 class="fw-bold" style="color: #28426B;">Propietario</h2>
+                                <p class="fw-bold"><em>Para nuestros propietarios</em></p>
+                                <div class="modal-body">
+                                   
+                                        <span class="fw-bold"><img src="/images/Check.png" style="height: 20px; width: 20px;"> Publicar viviendas</span>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span class="fw-bold" > Chats ilimitados</span>
+                                        <br>
+                                        <br>
+                                        <img src="/images/Check.png" style="height: 20px; width: 20px;"><span class="fw-bold"> Estadísticas</span>
+                                        <br>
+                                        <br>
+                                        <br style="height: 20px; width: 20px;">
+                                        
+                                
+                                    <div style="text-align: center;">
+                                        <button><a href="https://ppl-cohabify.onrender.com/login" class="block">¡Lo quiero!</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="margin-top:1vw"><em>* El plan propietario debe pagar 5€ por cada propiedad adicional que desee publicar</em></p>
+                        </div>
                 </div>
-                <div class="card-footer">
-                    <button><a href="https://ppl-cohabify.onrender.com/login" class="block">¡Lo quiero!</a></button>
-                </div>
-                </div>
-                <div class="card">
-                <div class="card-header">Explorador</div>
-                <div class="card-body">
-                    <p>Para los más exigentes</p>
-                    <p>Ver publicaciones ilimitadas</p>
-                    <p>Chats ilimitados</p>
-                    <p>Perfil verificado</p>
-                    <p>Acceso anticipado</p>
-                    <p>5€</p>
-                    <br></br>
-                    <p>*El plan explorador debe pagar 3€ por cada promoción que desee hacer por anuncio</p>
-                </div>
-                <div class="card-footer">
-                    <button><a href="https://ppl-cohabify.onrender.com/login" class="block">¡Lo quiero!</a></button>
-                </div>
-                </div>
-                <div class="card">
-                <div class="card-header">Propietario</div>
-                <div class="card-body">
-                    <p>Para nuestros propietarios</p>
-                    <p>Publicar viviendas</p>
-                    <p>Chats ilimitados</p>
-                    <p>Promociones de pisos ilimitadas</p>
-                    <p>Estadísticas</p>
-                    <p>15€ + 5€*</p>
-                    <br></br>
-                    <p>*El plan propietario debe pagar 5€ por cada propiedad adicional que desee publicar</p>
-                </div>
-                <div class="card-footer">
-                    <button><a href="https://ppl-cohabify.onrender.com/login" class="block">¡Lo quiero!</a></button>
-                </div>
-                </div>
+            </div>          
             </div>
+            <div class="row info">
+                <div v-else class="pricing-container">
+                <div class="col card card4">
+                    <h3 class="fw-bold" style="color: #28426B;">Promociones</h3>
+                    <p class="fw-bold"><em>Promociona tus anuncios de vivienda o tu anuncio como compañero. Durante 24 horas el anuncio que quieras aparecerá en 
+                        lo más alto del listado de anuncios, permitiendo así que más personas puedan ver tu publicación.</em></p>
             
-            <style>
-                .pricing-container {
-                    display: flex;
-                    justify-content: space-around;
-                    margin: 10%;
+                    <div style="text-align: center;">
+                        <h2 class="fw-bold" style="color: #28426B;"> 3€</h2>
+                    </div>
+                </div>
+                </div>
+            </div>  
+                <style>
+                    .pricing-container {
+                        padding: 0 20vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                    .info {
+                        margin-top: 25vh;
+
                     }
 
+                    @media (max-width: 600px) {
+                    .pricing-container {
+                        margin: 20%;
+                        display: block;
+                        flex-direction: column;
+                    }
+                    .info {
+                        margin-top: 190vh;
+                    }
                     .card {
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    width: 30%;
-                    text-align: center;
+                        margin-top: 10vh;
+                    }
                     }
 
-                    .card-header {
-                    background-color: #f8f8f8;
-                    padding: 10px;
-                    font-size: 1.5em;
-                    font-weight: bold;
+                
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: start;
+                        height: 80vh;
                     }
-
-                    .card-body {
-                    padding: 10px;
+                
+                    .col {
+                        flex: 1;
+                        margin: 0 20px;
                     }
-
-                    .card-footer {
-                    background-color: #f8f8f8;
-                    padding: 10px;
+                
+                    .card {
+                        padding: 20px;
+                        border: 1px solid #28426b30;
+                        border-radius: 20px;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        transition: transform 0.2s;
                     }
+                
+                    .card:hover {
+                        transform: scale(1.05);
+                    }
+                
+                    .card1 {
+                        background-color: #DAE5FF;
+                    }
+                
+                    .card2 {
+                        background-color: #BFD3FF;
+                    }
+                
+                    .card3 {
+                        background-color: #98B2E8;
+                    }
+                
+                    .card4 {
+                        background-color: #d2dfff;
+                    }
+                
+                    .modal-body {
 
+                        padding: 30px 15px;
+                        text-align: left;
+                    }
+                
+                    img {
+                        height: 20px;
+                        width: 20px;
+                    }
+                
+                    h2 {
+                        font-weight: bold;
+                        color: #28426B;
+                    }
+                
+                    p {
+                        font-weight: bold;
+                    }
+                
+                    em {
+                        font-style: italic;
+                    }
+                
+                    input {
+                        margin-bottom: 10px;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                    }
+                
                     button {
-                    padding: 5px 15px;
-                    background-color: #007bff;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
+                        padding: 10px 24px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        transition: background-color 0.3s;
                     }
-
+                
                     button:hover {
-                    background-color: #0056b3;
+                        background-color: #555;
+                        color: white;
                     }
-            </style>
+                </style>
+                
+                              
       </Paragraph>
+    </div>
     </Container>
 </section>
 
